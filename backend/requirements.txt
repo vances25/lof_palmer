@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 python-dotenv
-motor
+motor==3.7.0
 pydantic
 pymongo<4.0
