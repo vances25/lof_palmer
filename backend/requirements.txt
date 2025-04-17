@@ -1,4 +1,4 @@
-fastapi0
+fastapi
 uvicorn
 python-dotenv
 motor
