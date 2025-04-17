@@ -3,4 +3,4 @@ uvicorn
 python-dotenv
 motor==3.7.0
 pydantic
-pymongo<4.0
+pymongo
