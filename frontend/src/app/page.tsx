@@ -28,7 +28,7 @@ export default function Home() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          speed: response,
+          speed: parseFloat(response),
           word: currentVerb,
         }),
       })
