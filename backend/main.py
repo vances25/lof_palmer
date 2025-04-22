@@ -79,7 +79,9 @@ async def get_data(password: str = None):
 @app.get("/getword")
 async def getword():
 	global words
-	return {"word": str(min(words, key=words.get))}
+	lowest_three = sorted(words.items(), key=lambda x: x[1])[:3]
+
+	return {"word": random.choice(lowest_three)[0]}
 
 class Submit(BaseModel):
 	word: str
