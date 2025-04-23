@@ -22,7 +22,7 @@ export default function Home() {
       setDisabled(true)
       console.log(currentVerb)
       
-      setTimeout(() => setDisabled(false), 10000)
+      setTimeout(() => setDisabled(false), 4000)
 
       fetch(`${url}/submit`, {
         method: 'POST',
@@ -48,7 +48,7 @@ export default function Home() {
       
 
     }else{
-      alert("please wait 10 seconds for button to cool down")
+      alert("please wait 4 seconds for button to cool down")
     }
   }
 
